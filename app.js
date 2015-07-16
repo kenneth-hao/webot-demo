@@ -6,6 +6,8 @@ var verbose = require('debug')('webot-demo:verbose');
 
 var app = express();
 
+require('./rules')(webot);
+
 var wx_token = process.env.WX_TOKEN || 'test';
 
 webot.watch(app, { token: wx_token, path: '/wechat' })
