@@ -1,0 +1,11 @@
+---
+hi|nihao: 'hi, I am robot'
+
+hello:
+  - 你好
+  - fine
+  - how are you
+
+test:
+  - Roger that!
+  - "收到你的测试消息了! 嘻嘻..[可爱]"
