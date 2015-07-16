@@ -7,16 +7,19 @@ module.exports = exports = function(webot) {
     },
     handler: function(info) {
       var reply = {
-        title: '感谢你收听webot机器人',
+        title: '感谢您订阅 <色彩明妆--大兴店> 微信商城',
         pic: 'https://raw.github.com/node-webot/webot-example/master/qrcode.jpg',
         url: 'https://github.com/node-webot/webot-example',
         description: [
           '你可以试试以下指令:',
-            'game: 汪汪'
+            'cj: 抽取幸运礼品, 每天都可以抽取一次'
         ].join('\n')
       };
       return reply;
     }
   });
 
+  require('js-yaml');
+  webot.dialog(__dirname + '/dialog.yaml');
+  // webot.loads()
 };
