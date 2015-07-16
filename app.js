@@ -10,7 +10,7 @@ require('./rules')(webot);
 
 var wx_token = process.env.WX_TOKEN || 'test';
 
-webot.watch(app, { token: wx_token, path: '/wechat' })
+webot.watch(app, { token: wx_token, path: '/wechat' });
 
 var port = process.env.PORT || 3000;
 app.listen(port, function() {

@@ -1,5 +1,5 @@
 module.exports = exports = function(webot) {
-  var reg_help = /^(help|\?)/i;
+  var reg_help = /^(help|\?|？)/i;
   webot.set({
     name: 'hello',
     pattern: function(info) {
@@ -19,6 +19,4 @@ module.exports = exports = function(webot) {
     }
   });
 
-  require('js-yaml');
-  webot.dialog(__dirname + '/dialog.yaml');
 };
