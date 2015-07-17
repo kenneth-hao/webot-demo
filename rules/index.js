@@ -19,7 +19,5 @@ module.exports = exports = function(webot) {
     }
   });
 
-  require('js-yaml');
-  webot.dialog(__dirname + '/dialog.yaml');
-  // webot.loads()
+  webot.loads('dialogs');
 };
