@@ -1,4 +1,5 @@
-module.exports = exports = function(webot) {
+module.exports = function(webot) {
+  /*
   var reg_help = /^(help|\?|？)/i;
   webot.set({
     name: 'hello',
@@ -18,6 +19,6 @@ module.exports = exports = function(webot) {
       return reply;
     }
   });
-
+  */
   webot.loads('dialogs');
 };
